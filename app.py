@@ -44,7 +44,7 @@ def display_tasks(task_list):
     for task in task_list:
         print(task)
 
-def main():
+def main(choice):
     tasks = []
 
     while True:
@@ -53,8 +53,6 @@ def main():
         print("2. Remove Task")
         print("3. Display Tasks")
         print("4. Exit")
-
-        choice = input("Enter your choice: ")
 
         if choice == '1':
             task = input("Enter the task: ")
@@ -69,3 +67,6 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+
+choice = input("Enter your choice: ")
+main(choice)
